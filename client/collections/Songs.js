@@ -2,7 +2,8 @@
 // var SongModel = require('../models/SongModel');
 
 var Songs = Backbone.Collection.extend({
-
+	url: 'https://api.parse.com/1/classes/songs/',
+	
   parse: function(data) {
     return data.results;
   },
