@@ -3,32 +3,33 @@
 	<head>
 		<meta name="description" content="Spotify Web Player Built with BackboneJS">
 		<title>Spinal Spotify | Colin Zarnegar</title>
-		<script src="data/data.js"></script>
 		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
-		<script src="backbone.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	</head>
   <body>
+  	<script src="models/SongModel.js"></script>
+
+  	<script src="collections/Songs.js"></script>
+  	<script src="collections/SongQueue.js"></script>
+
+  	<script src="views/PlayerView.js"></script>
+  	<script src="views/VisualizerView.js"></script>
+  	<script src="views/LibraryView.js"></script>
+  	<script src="views/LibraryEntryView.js"></script>
+  	<script src="views/SongQueueView.js"></script>
+  	<script src="views/SongQueueEntryView.js"></script>
+  	<script src="views/AppView.js"></script>
+  	<script src="models/AppModel.js"></script>
+
     <div class="container">
       <div class="column center">
-          <h1>MyTunes</h1>
-          <h6>HTML5 + BackboneJS Player</h6>
+        <h1>SpinalSpotify</h1>
+        <h6>HTML5 + BackboneJS Spotify Player</h6>
       </div>
       <div class="column add-bottom">
       </div>
     </div>
-    <script>
-      $(function() {
-        // set up model objects
-        // var HTML5_VISUAL = new Visualizer().ini();
-        var library = new Songs();
-        var app = new AppModel({library: library});
-
-        // build a view for the top level of the whole app
-        var appView = new AppView({model: app});
-
-        // put the view onto the screen
-        $('.add-bottom').html(appView.render());
-      });
-    </script>
+    <script src="index.js"></script>
+    <!-- <script src="dist/bundle.js"></script> -->
   </body>
 </html>

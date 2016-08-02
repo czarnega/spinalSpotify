@@ -1,0 +1,283 @@
+/* Font Family
+================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400");
+
+
+/* Desktop
+================================================== */
+
+.container {
+	position:relative;
+	margin:0 auto;
+	width:700px;
+}
+.column {
+	width:inherit;
+}
+
+/* CSS Reset
+================================================== */
+
+html,body,div,span,h1,h6,p,a,ul,li,audio {
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+body {
+	line-height:1;
+}
+ul {
+	list-style:none;
+}
+
+
+/* Basic Styles
+================================================== */
+
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#111;
+color:#C8C7C8;
+font:20px/24px "Yanone Kaffeesatz", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+padding:5px 0;
+}
+
+* {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+}
+
+
+/* Typography
+================================================== */
+
+h1,h6,p {
+	color:#808080;
+	font-weight:200;
+}
+h1 {
+	font-size:42px;
+	line-height:44px;
+	margin:20px 0 0;
+	color: #1ED760;
+}
+h6 {
+	font-size:18px;
+	line-height:20px;
+	margin:4px 0 20px;
+}
+p {
+	font-size:18px;
+	line-height:20px;
+	margin:0 0 2px;
+}
+
+/* Audio Player Styles
+================================================== */
+
+/* Default / Desktop / Firefox */
+audio {
+	margin:0 15px 0 14px; width:670px;
+}
+#mainwrap {	
+	/* add box-shadow or other styles here */
+}
+#audiowrap {
+	background-color:#231F20;
+	margin:0 auto;
+}
+#plwrap {
+	margin:0 auto;
+}
+
+.songList {
+	margin:0 auto;
+}
+
+
+#tracks {
+	min-height:65px;
+	position:relative;
+	text-align:center;
+	text-decoration:none;
+	top:13px;
+}
+#nowPlay {
+	display:inline;
+}
+#npTitle {
+	margin:0;
+	padding:21px;
+	text-align:right;
+}
+#npAction {
+	padding:21px;
+	position:absolute;
+}
+#plList {
+	margin:0;
+}
+#plList li {
+	background-color:#231F20;
+	cursor:pointer;
+	margin:0;
+	padding:21px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: stretch;
+	align-items: center;
+}
+#plList li:hover {
+	background-color:#262223;
+}
+.plHeader {
+	background-color:#231F20;
+	cursor:pointer;
+	margin:0;
+	padding: 10px 0;
+	display: flex;
+	align-items: flex-end;
+	font-size: 24px;
+}
+.plItem {
+	position:relative;
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+/*.plTitle {
+	left:61px;
+	overflow:hidden;
+	position:absolute;
+	right:65px;
+	text-overflow:ellipsis;
+	top:0;
+	white-space:nowrap;
+}*/
+.plArt {
+	padding-left:21px;
+	height: 60px;
+	width: 60px;
+}
+.plArt > img {
+	width: 100%;
+	height: auto;
+}
+.plArtist {
+	flex: 1;
+	text-align: center;
+/*	position:absolute;
+	left: 86px;
+	top: 0;
+	white-space:nowrap;*/
+	/*width:40px;*/
+}
+.plTitle {
+	flex: 4;
+	text-align: center;
+/*	left:160px;
+	overflow:hidden;
+	position:absolute;
+	right:65px;
+	text-overflow:ellipsis;
+	top:0;
+	white-space:nowrap;*/
+}
+.plPlaycount {
+	flex: 1;
+	text-align: right;
+	padding-right: 10px;
+}
+.plNum {
+	padding-left:21px;
+	width:25px;
+}
+.plLength {
+	padding-left:21px; position:absolute; right:21px; top:0;
+}
+.plSel,.plSel:hover {
+	background-color:#262223!important; cursor:default!important;
+}
+a[id^="btn"] {
+	background-color:#231F20; color:#C8C7C8; cursor:pointer; font-size:50px; margin:0; padding:0 27px 11px; text-decoration:none;
+}
+a[id^="btn"]:last-child {
+	margin-left:-4px;
+}
+a[id^="btn"]:hover,a[id^="btn"]:active {
+	background-color:#262223;
+}
+a[id^="btn"]::-moz-focus-inner {
+	border:0; padding:0;
+}
+
+/* Links
+================================================== */
+
+a,a:visited { color:#ddd; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbb; }
+p a,p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+.add-bottom { margin-bottom:20px !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+
+
+/* Custom Styles
+================================================== */
+
+/* CSS Transitions */
+* {
+-moz-transition:all 100ms ease;
+-o-transition:all 100ms ease;
+-webkit-transition:all 100ms ease;
+transition:all 100ms ease;
+}
+
+/* Highlight Styles */
+::selection { background-color:#262223; color:#444; }
+::-moz-selection { background-color:#262223; color:#444; }
+
+
+
+.header {
+	font-size: 32px;
+	color: #1ED760;
+}
+
+.song_library {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #232323;
+}
+
+.song_row {
+
+}
+
+.song_row:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.table_cell {
+	text-align: center;
+	color: white;
+}
+
+.album_art {
+	width: 100px;
+	height: 100px;
+}
