@@ -6,7 +6,7 @@
 $(function() {
   // set up model objects
   // var HTML5_VISUAL = new Visualizer().ini();
-  var library = new Songs(SongData);
+  var library = new Songs(songData);
   var app = new AppModel({library: library});
 
   // build a view for the top level of the whole app
